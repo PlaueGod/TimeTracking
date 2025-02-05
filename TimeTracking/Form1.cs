@@ -101,11 +101,11 @@ namespace TimeTracking
 
                 if (IsAppRunning())
                 {
-                    remainingUsageTime -= 1.0 / 60; // ”меньшаем каждую секунду
+                    remainingUsageTime -= 1.0 / 60;
                 }
 
                 UpdateTimerDisplay();
-                await Task.Delay(1000); // ∆дем секунду
+                await Task.Delay(1000); 
             }
 
             MessageBox.Show("The usage time is over. Block the application.", "Warning",
